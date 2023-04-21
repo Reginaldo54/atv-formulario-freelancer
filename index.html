@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> ATV Formulário</title>
+</head>
+<body>
+   
+    <fieldset>
+
+
+        <legend>Formulário de Freelancer</legend>
+     
+
+        <div id="form">
+
+      
+            <form action="site.com" method="post" name="formulario" >
+                <fieldset>
+                    <label >Nome: <span class="exigido">*</span></label> <input type="text" name="nome" placeholder="Insira seu Nome" class="input" required> <br>
+                    <label>Sobrenome: <span class="exigido">*</span></label> <input type="text" name="sobrenome" placeholder="Insira seu Sobrenome" class="input" required>  <br>
+                    <label>Telefone: <span class="exigido">*</span></label> <input type="tel" name="telefone" placeholder="(99)99999-9999" class="input" required> <br>
+                    <label>E-mail: <span class="exigido">*</span></label> <input type="email" name="email" placeholder="Insira seu e-mail" class="input" required> <br>
+                    <label>Mensagem: <span class="exigido">*</span></label> <input type="text" name="mensagem" placeholder="Informe o que deseja." class="input" required>
+                </fieldset>
+                    
+                <fieldset>
+                    <label >Lingua</label>
+                    <select name="linguagem" id="linguagem" class="input">
+                        <option selected>Selecione idioma</option>
+                        <option value="pt">Português (pt-br)</option>
+                        <option value="en">English (en)</option>
+                        <option value="es">Espanhol (es)</option>
+                        <option value="fr">Francês (fr)</option>
+                    </select>
+                </fieldset>
+                
+
+
+            
+                <fieldset>
+                    <label> Protótipo (Requisitos)</label> <input type="file" accept=".pdf, , .doc, .docx, .png, .jpeg">
+
+
+                </fieldset>
+
+                
+                    
+              
+                    <fieldset>
+                        <div id="linguagem_programacao">       
+                            <label id="linguagem_preferida">As Linguages que você <br> prefere?</label>
+                            <select name="linguagem_programacao" id="linguagem_programacao" multiple>
+                                <option  value = "java"selected> Java</option>
+                                <option value="c"> C</option>
+                                <option value="python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </select><br>
+                            <label for="linguagem_programacao"> (Para fazer várias escolhas, mantenha a tecla CTRL precionada)</label>
+                            
+                         </div>
+                
+
+                    </fieldset>
+
+                <fieldset >
+                    <label >Banco de Dados</label>
+
+                    <label>MySQL</label><input type="radio" name="banco">
+                    <label>Postgresql</label><input type="radio" name="banco">
+                    <label>MongoDB</label><input type="radio" name="banco">
+                    <label>N/A</label><input type="radio" name="banco">
+                    <label>Outra</label><input type="radio" name="banco">
+                    
+                </fieldset>
+            
+                <fieldset>
+
+                    <label for="turno">Turno para Reuniões: <span class="exigido">*</span></label>
+                    <select id="turno" name="turno" required>
+                        <option value="">Selecione um Turno</option>
+                        <option value="manhã">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select><br><br>
+                   
+
+
+                </fieldset>
+            
+                <fieldset>
+                    <label>Horário Sugerido</label> <input type="time">
+                </fieldset>
+
+
+                <fieldset>
+                    <label>Data Prevista de Entrega <span class="exigido">*</span></label><input type="date" name="data" required>
+                </fieldset>
+
+
+                    <div id="button">
+                        <button type="submit"> Enviar</button>
+                        <button type="reset"> Limpar</button>
+
+                    </div>
+                    
+
+            </form>
+
+    </div>
+
+
+    </fieldset>
+
+
+</body>
+</html>
+

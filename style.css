@@ -1,0 +1,76 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#form
+{
+    margin: 0.5%;
+    
+}
+
+#form label
+{
+    padding: 1%;
+    
+    padding-right: 10px;
+}
+
+fieldset
+{
+    padding: 7px;
+    margin-top: 5px;
+}
+#linguagem_programacao
+{
+    position: relative;
+    text-align: center;
+    margin-left: -40px;
+}
+#linguagem_programacao label
+{
+    margin-left: -40px;
+}
+
+#linguagem_preferida
+{
+    position: absolute;
+    left: 79px;
+    padding-right: -10%;
+    top: 20%;
+}
+
+
+#button
+{
+    margin-left: 40%;
+    margin-top: 10px;
+
+}
+
+#button button
+{
+    margin-left: 10px;
+}
+.exigido
+{
+    color: red;
+}
+
+.input
+{
+    text-align: center;
+    
+    margin-left: 10%;
+    
+}
