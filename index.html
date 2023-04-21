@@ -9,26 +9,29 @@
 </head>
 <body>
    
-    <fieldset>
+    <fieldset id="field">
 
 
-        <legend>Formulário de Freelancer</legend>
+        <legend id="primeira_legenda">Formulário de Freelancer</legend>
      
 
-        <div id="form">
+        
 
       
             <form action="site.com" method="post" name="formulario" >
+
                 <fieldset>
-                    <label >Nome: <span class="exigido">*</span></label> <input type="text" name="nome" placeholder="Insira seu Nome" class="input" required> <br>
-                    <label>Sobrenome: <span class="exigido">*</span></label> <input type="text" name="sobrenome" placeholder="Insira seu Sobrenome" class="input" required>  <br>
-                    <label>Telefone: <span class="exigido">*</span></label> <input type="tel" name="telefone" placeholder="(99)99999-9999" class="input" required> <br>
-                    <label>E-mail: <span class="exigido">*</span></label> <input type="email" name="email" placeholder="Insira seu e-mail" class="input" required> <br>
-                    <label>Mensagem: <span class="exigido">*</span></label> <input type="text" name="mensagem" placeholder="Informe o que deseja." class="input" required>
+                    <legend>Dados Pessoais</legend>
+                    <label >Nome:  <span class="exigido">*</span>  </label>   <br>   <input type="text" name="nome" placeholder="Insira seu Nome" class="input" required> <br>
+                    <label>Sobrenome: <span class="exigido">*</span> </label> <br>   <input type="text" name="sobrenome" placeholder="Insira seu Sobrenome" class="input" required>  <br>
+                    <label>Telefone:  <span class="exigido">*</span></label>  <br>   <input type="tel" name="telefone" placeholder="(99)99999-9999" class="input" pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}" required> <br>
+                    <label>E-mail:    <span class="exigido">*</span></label>  <br>   <input type="email" name="email" placeholder="Insira seu e-mail" class="input" required> <br>
+                    <label>Mensagem:  <span class="exigido">*</span></label>  <br>   <input type="text" name="mensagem" placeholder="Informe o que deseja." class="input" required>
                 </fieldset>
                     
                 <fieldset>
-                    <label >Lingua</label>
+                    <legend>Idioma</legend>
+                    <label >Lingua</label> <br> 
                     <select name="linguagem" id="linguagem" class="input">
                         <option selected>Selecione idioma</option>
                         <option value="pt">Português (pt-br)</option>
@@ -38,11 +41,10 @@
                     </select>
                 </fieldset>
                 
-
-
             
                 <fieldset>
-                    <label> Protótipo (Requisitos)</label> <input type="file" accept=".pdf, , .doc, .docx, .png, .jpeg">
+                    <legend>Envios</legend>
+                    <label> Protótipo (Requisitos)</label>  <br> <input type="file" accept=".pdf, , .doc, .docx, .png, .jpeg" class="input" >
 
 
                 </fieldset>
@@ -51,36 +53,37 @@
                     
               
                     <fieldset>
-                        <div id="linguagem_programacao">       
-                            <label id="linguagem_preferida">As Linguages que você <br> prefere?</label>
-                            <select name="linguagem_programacao" id="linguagem_programacao" multiple>
+                        <legend>Linguagem de Programação</legend>
+                            <label id="linguagem_preferida">As Linguages que você  prefere?</label> <br>
+                            <select name="linguagem_programacao" id="linguagem_programacao" multiple class="input" title="(Para fazer várias escolhas, mantenha a tecla CTRL precionada)">
                                 <option  value = "java"selected> Java</option>
                                 <option value="c"> C</option>
                                 <option value="python">Python</option>
                                 <option value="js">JavaScript</option>
                             </select><br>
-                            <label for="linguagem_programacao"> (Para fazer várias escolhas, mantenha a tecla CTRL precionada)</label>
+                          
                             
-                         </div>
+                         
                 
 
                     </fieldset>
 
                 <fieldset >
-                    <label >Banco de Dados: </label>
+                    <legend>Banco de Dados</legend>
+                    <label > Escolha um Banco de Dados: </label> <br> <br>
 
-                    <label>MySQL</label>        <input type="radio" name="banco">
-                    <label>| Postgresql</label>   <input type="radio" name="banco">
-                    <label>| MongoDB</label>      <input type="radio" name="banco">
-                    <label>| N/A</label>          <input type="radio" name="banco">
-                    <label>| Outra</label>        <input type="radio" name="banco">
-                    
+                   <input type="radio" name="banco" class="radio1"> <label class="sem_margem">MySQL     </label>             <br> 
+                   <input type="radio" name="banco" class="radio1"> <label class="sem_margem"> Postgresql  </label>    <br> 
+                   <input type="radio" name="banco" class="radio1"> <label class="sem_margem"> MongoDB     </label>       <br> 
+                   <input type="radio" name="banco" class="radio1"> <label class="sem_margem"> N/A         </label>           <br> 
+                   <input type="radio" name="banco" class="radio1"> <label class="sem_margem"> Outra       </label>         <br> 
+                     
                 </fieldset>
             
                 <fieldset>
-
-                    <label for="turno">Turno para Reuniões: <span class="exigido">*</span></label>
-                    <select id="turno" name="turno" required>
+                    <legend>Reunião</legend>
+                    <label for="turno">Turno para Reuniões: <span class="exigido">*</span></label> <br>
+                    <select id="turno" name="turno" class="input" required>
                         <option value="">Selecione um Turno</option>
                         <option value="manhã">Manhã</option>
                         <option value="tarde">Tarde</option>
@@ -89,15 +92,15 @@
                    
 
 
-                </fieldset>
-            
-                <fieldset>
-                    <label>Horário Sugerido</label> <input type="time">
+             
+                    <label>Horário Sugerido</label> <br> <input type="time" class="input">
                 </fieldset>
 
 
                 <fieldset>
-                    <label>Data Prevista de Entrega <span class="exigido">*</span></label><input type="date" name="data" required>
+                    <legend>Entrega</legend>
+                    <label>Data Prevista de Entrega <span class="exigido">*</span></label> <br>
+                    <input type="date" name="data" class="input" required>
                 </fieldset>
 
 
@@ -109,8 +112,6 @@
                     
 
             </form>
-
-    </div>
 
 
     </fieldset>
