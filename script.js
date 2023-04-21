@@ -1,4 +1,4 @@
-function validateForm() 
+function validarForm() 
 {
     var nome        = document.forms["formulario"]["nome"].value;
     var sobrenome   = document.forms["formulario"]["sobrenome"].value;
@@ -12,5 +12,9 @@ function validateForm()
     if (nome == "" || sobrenome == "" || telefone == "" || email == "" || mensagem == "" || turno == "" || data == "" ) {
         alert("Por favor, preencha todos os campos obrigatórios.");
         return false;
+    }
+    else
+    {
+        alert("Enviado!");
     }
 }

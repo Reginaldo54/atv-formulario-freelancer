@@ -67,13 +67,13 @@
                     </fieldset>
 
                 <fieldset >
-                    <label >Banco de Dados</label>
+                    <label >Banco de Dados: </label>
 
-                    <label>MySQL</label><input type="radio" name="banco">
-                    <label>Postgresql</label><input type="radio" name="banco">
-                    <label>MongoDB</label><input type="radio" name="banco">
-                    <label>N/A</label><input type="radio" name="banco">
-                    <label>Outra</label><input type="radio" name="banco">
+                    <label>MySQL</label>        <input type="radio" name="banco">
+                    <label>| Postgresql</label>   <input type="radio" name="banco">
+                    <label>| MongoDB</label>      <input type="radio" name="banco">
+                    <label>| N/A</label>          <input type="radio" name="banco">
+                    <label>| Outra</label>        <input type="radio" name="banco">
                     
                 </fieldset>
             
@@ -102,7 +102,7 @@
 
 
                     <div id="button">
-                        <button type="submit"> Enviar</button>
+                        <button type="submit" onclick="validarForm()"> Enviar</button>
                         <button type="reset"> Limpar</button>
 
                     </div>
@@ -115,6 +115,9 @@
 
     </fieldset>
 
+    <script src="script.js">
+
+    </script>
 
 </body>
 </html>
